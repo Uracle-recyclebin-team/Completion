@@ -1,0 +1,242 @@
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.Building {
+    position: relative;
+    text-align: center;
+    bottom: 6vh;
+    width: 393px;
+    height: 851px;
+    margin: auto;
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+    bottom: 6vh;
+}
+
+.Building-Middle {
+    position: relative;
+    margin: auto;
+    display: flex;
+    width: 393px;
+    height: 255px;
+    bottom: 3vh;
+}
+
+.Building-Middle img {
+    width: 393px;
+}
+
+.Building-Middle-Btn {
+    position: absolute;
+    left: 45%;
+    bottom: -3vh;
+}
+
+.Building-Middle-Btn button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.Building-Middle-Btn img {
+    position: absolute;
+    width: 5vh;
+    bottom: 25vh;
+}
+
+.Building-Middle-2floor {
+    position: relative;
+    margin: auto;
+    display: flex;
+    width: 393px;
+    height: 255px;
+    bottom: 3vh;
+}
+
+
+.Building-Middle-2floor > .Building-img {
+    width: 393px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.Building-Middle-2floor > .Building-img2 {
+    width: 393px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.Building-Middle-3floor {
+    position: relative;
+    margin: auto;
+    display: flex;
+    width: 393px;
+    height: 255px;
+    bottom: 3vh;
+}
+
+.Building-Middle-3floor > .Building-img {
+    width: 393px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.Building-Middle-3floor > .Building-img2 {
+    width: 393px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.Building-Middle-4floor {
+    position: relative;
+    margin: auto;
+    display: flex;
+    width: 393px;
+    height: 255px;
+    bottom: 3vh;
+}
+
+.Building-Middle-4floor > .Building-img {
+    position: relative;
+    width: 393px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.Slide2floor {
+    position: relative;
+    bottom: 5vh;
+}
+
+.Slide3floor {
+    position: relative;
+    bottom: 5vh;
+}
+
+.Slide4floor {
+    position: relative;
+    bottom: 5vh;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slick-list > div {
+    display: flex;
+}
+
+.prevBtn {
+    background-color: rgba(228, 228, 228, 0.397);
+    border: none;
+    border-radius: 20px;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+    width: 5vh;
+    top: 130px;
+    right: 173px;
+    z-index: 2;
+}
+
+.nextBtn {
+    background-color: rgba(228, 228, 228, 0.397);
+    border: none;
+    border-radius: 20px;
+    padding: 0;
+    cursor: pointer;
+    position: absolute;
+    width: 5vh;
+    top: 130px;
+    right: 0px;
+    z-index: 2;
+}
+
+.Building-Middle-2floor > .upBtn-2to3 {
+    background-color: rgba(228, 228, 228, 0.397);
+    border: none;
+    border-radius: 20px;
+    padding: 0;
+    cursor: pointer;
+    position: absolute;
+    width: 5vh;
+    top: 215px;
+    left: 45%;
+}
+
+
+.Building-Middle-3floor > .downBtn-3to2 {
+    background-color: rgba(228, 228, 228, 0.397);
+    border: none;
+    border-radius: 20px;
+    padding: 0;
+    cursor: pointer;
+    position: absolute;
+    width: 5vh;
+    top: 386px;
+    left: 45%;
+}
+
+
+.Building-Middle-3floor > .upBtn-3to4 {
+    background-color: rgba(228, 228, 228, 0.397);
+    border: none;
+    border-radius: 20px;
+    padding: 0;
+    cursor: pointer;
+    position: absolute;
+    width: 5vh;
+    top: 215px;
+    left: 45%;
+}
+
+.Building-Middle-4floor > .downBtn-4to3 {
+    background-color: rgba(228, 228, 228, 0.397);
+    border: none;
+    border-radius: 20px;
+    padding: 0;
+    cursor: pointer;
+    position: absolute;
+    width: 5vh;
+    top: 386px;
+    left: 45%;
+}
+
+.Building-Middle-2floor button:hover {
+    transform: scale(1.1);
+}
+
+.Building-Middle-3floor button:hover {
+    transform: scale(1.1);
+}
+
+.Building-Middle-4floor button:hover {
+    transform: scale(1.1);
+}
+
+.Building-Bottom {
+    position: relative;
+    background-color: rgb(243, 243, 243);
+    height: 20vh;
+    top: 17vh;
+}
+
+.Building-Bottom > .Building-Bottom-Table {
+    list-style: none;
+    text-align: left;
+    font-size: 25px;
+    overflow-y: scroll;
+    font-family: NanumSquareNeo-Variable;
+}
+
+.Building-Bottom-Table td {
+    padding: 0.5vh;
+}

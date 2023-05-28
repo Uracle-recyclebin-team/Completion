@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'NanumSquareRound';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.Main {
+  position: relative;
+  text-align: center;
+  bottom: 6vh;
+  width: 393px;
+  height: 851px;
+  margin: auto;
+}
+
+.Map_Middle {
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  bottom: 3.69vh;
+  width: 393px;
+  height: 220px;
+}
+
+.Map_Bottom {
+  background-color: rgb(235, 235, 235);
+  width: 393px;
+  height: 471px;
+  overflow-y: scroll;
+}
+
+.Map_Bottom > ul {
+  list-style: none;
+  text-align: left;
+  font-family: NanumSquareRound;
+  margin: auto;
+}
+
+.Map_Bottom > ul > li {
+  margin-top: 5px;
+}

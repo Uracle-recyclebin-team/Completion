@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Cafe24Ssurround';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.welcome {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 393px;
+    height: 851px;
+}
+
+.welcome-logo {
+    pointer-events: none;
+}
+
+.welcome > .welcome-container {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(15px + 2vmin);
+    color: black;
+    margin: auto;
+    font-family: Cafe24Ssurround;
+}
+  

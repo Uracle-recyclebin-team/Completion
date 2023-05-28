@@ -1,0 +1,123 @@
+import React, { useRef, useEffect } from 'react';
+import Slider from 'react-slick';
+import '../building/building.css';
+
+const Slide_4floor = () => {
+  const sliderRef = useRef(null);
+
+  useEffect(() => {
+    const slick = sliderRef.current;
+    if (slick) {
+      slick.slickGoTo(7); // Slide 3로 이동
+    }
+  }, []);
+
+  const PrevButton = ({ onClick }) => {
+    const handleClick = () => {
+      const slick = sliderRef.current;
+      if (slick && slick.currentSlide === 2) {
+        slick.slickGoTo(0);
+      } else if (onClick) {
+        onClick();
+      }
+    };
+
+    return (
+      <button className="prevBtn" onClick={handleClick}>
+        <img src="https://cdn1.iconfinder.com/data/icons/bootstrap-vol-2/16/chevron-left-40.png" alt="PrevBtnImg" />
+      </button>
+    );
+  };
+
+  const NextButton = ({ onClick }) => {
+    const handleClick = () => {
+      const slick = sliderRef.current;
+      if (slick && slick.currentSlide === 2) {
+        slick.slickGoTo(3);
+      } else if (onClick) {
+        onClick();
+      }
+    };
+
+    return (
+      <button className="nextBtn" onClick={handleClick}>
+        <img src="https://cdn1.iconfinder.com/data/icons/bootstrap-vol-2/16/chevron-right-40.png" alt="NextBtnImg" />
+      </button>
+    );
+  };
+
+  const appendArrows = (container, prevButton, nextButton) => (
+    <div className="arrowContainer">
+      {prevButton}
+      {nextButton}
+    </div>
+  );
+
+  const settings = {
+    dots: false,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    arrows: true,
+    prevArrow: <PrevButton />,
+    nextArrow: <NextButton />,
+    appendArrows: appendArrows
+  };
+
+  return (
+    <Slider ref={sliderRef} {...settings}>
+      <div>
+        <img src="../4floorimage/left7.jpg" alt="" height="210px" width="393px" />
+      </div>
+      <div>
+        <img src="../4floorimage/left6.jpg" alt="" height="210px" width="393px" />
+      </div>
+      <div>
+        <img src="../4floorimage/left5.jpg" alt="" height="210px" width="393px" />
+      </div>
+      <div>
+        <img src="../4floorimage/left4.jpg" alt="" height="210px" width="393px" />
+      </div>
+      <div>
+        <img src="../4floorimage/left3.jpg" alt="" height="210px" width="393px" />
+      </div>
+      <div>
+        <img src="../4floorimage/left2.jpg" alt="" height="210px" width="393px" />
+      </div>
+      <div>
+        <img src="../4floorimage/left1.jpg" alt="" height="210px" width="393px" />
+      </div>
+      <div>
+        <img src="../4floorimage/mid.jpg" alt="" height="210px" width="393px" />
+      </div>
+      <div>
+        <img src="../4floorimage/right1.jpg" alt="" height="210px" width="393px" />
+      </div>
+      <div>
+        <img src="../4floorimage/right2.jpg" alt="" height="210px" width="393px" />
+      </div>
+      <div>
+        <img src="../4floorimage/right3.jpg" alt="" height="210px" width="393px" />
+      </div>
+      <div>
+        <img src="../4floorimage/right4.jpg" alt="" height="210px" width="393px" />
+      </div>
+      <div>
+        <img src="../4floorimage/right5.jpg" alt="" height="210px" width="393px" />
+      </div>
+      <div>
+        <img src="../4floorimage/right6.jpg" alt="" height="210px" width="393px" />
+      </div>
+      <div>
+        <img src="../4floorimage/right7.jpg" alt="" height="210px" width="393px" />
+      </div>
+      <div>
+        <img src="../4floorimage/right8.jpg" alt="" height="210px" width="393px" />
+      </div>
+    </Slider>
+  );
+};
+
+export default Slide_4floor;
